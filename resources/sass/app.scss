@@ -1,0 +1,10 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@import './partials/header';
+@import './partials/main';
+@import './partials/footer';
+@import './partials/top';

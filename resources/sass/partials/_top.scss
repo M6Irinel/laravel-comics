@@ -1,0 +1,25 @@
+.top {
+    position: relative;
+    z-index: 1000;
+    background-color: #0282f9;
+
+    a {
+        color: #fff;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: filter 0.1s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            filter: invert(1);
+        }
+    }
+
+    @media screen and (max-width: 767.98px) {
+        a {
+            width: 100%;
+        }
+    }
+}
