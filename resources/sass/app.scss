@@ -1,8 +1,11 @@
-#app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
 
 @import './partials/header';
 @import './partials/main';

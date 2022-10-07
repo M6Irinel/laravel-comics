@@ -1,6 +1,6 @@
 <div class="top">
-    <div class="container">
-        <nav class="navbar p-5" style="background-color: gray">
+    <div class="container px-0">
+        <nav class="navbar py-5 px-0">
             <a class="navbar-brand" href="#">
                 <img src="./img/buy-comics-digital-comics.png" width="50" height="60"
                     class="d-inline-block align-top" alt="">

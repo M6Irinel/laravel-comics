@@ -1,5 +1,5 @@
-section {
-    background-image: url('../assets/img/jumbotron.jpg');
+section.for-main {
+    background-image: url('../img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: top center;
@@ -14,7 +14,7 @@ section {
 
     main {
         position: relative;
-        font-size: 2rem;
+        font-size: 1rem;
 
         .but,
         .but2 {

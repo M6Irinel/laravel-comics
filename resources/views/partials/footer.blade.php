@@ -19,7 +19,7 @@
         @endforeach
 
         <div class="ms-auto">
-            <img class="logo-footer" src="./img/dc-logo-bg.png" alt="dc logo bg">
+            <img class="logo-footer" src="img/dc-logo-bg.png" alt="dc logo bg">
         </div>
     </div>
 
