@@ -28,6 +28,40 @@ section.for-main {
             }
         }
 
+        .bg-blue-DC {
+            background-color: #0282f9;
+            height: 70px;
+
+            a {
+                top: -270px;
+            }
+
+            .bg-azure-DC {
+                background-color: #00a9d9;
+            }
+        }
+
+        .border-DC-price {
+            border: 1px solid #1d1d1d;
+        }
+
+        .bg-gray-DC {
+            background-color: #f6f6f6;
+        }
+
+        .price {
+            background-color: #55ba59;
+            
+            & > div {
+                border: 1px solid #1d1d1d;
+            }
+
+            select {
+                background-color: transparent;
+                border: none;
+            }
+        }
+
         .but {
             font-size: 1.5rem;
             font-weight: bold;

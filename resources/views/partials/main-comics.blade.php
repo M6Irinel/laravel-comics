@@ -2,14 +2,16 @@
     <div class="bg">
         <main class="text-white fw-bold py-4 container">
             <button class="but px-3 py-1">CURRENT SERIES</button>
-            <div class="row my-3">
+            <div class="grid-12 my-3 gap-20">
                 @foreach (config('comics') as $el)
-                    <div class="myCard col-6 col-md-3 col-lg-2 pt-4">
-                        <div class="img-card">
-                            <img class="img-fluid" src="{{ $el['thumb'] }}" alt="{{ $el['series'] }}"
-                                title="{{ $el['type'] }}">
-                        </div>
-                        <p class="title pt-3">{{ $el['series'] }}</p>
+                    <div class="myCard g-col-2">
+                        <a class="flex f-column" href="{{ route('comic', ['id' => $loop->index]) }}">
+                            <div class="grow">
+                                <img class="fluid-img" src="{{ $el['thumb'] }}" alt="{{ $el['series'] }}"
+                                    title="{{ $el['type'] }}">
+                            </div>
+                            <p class="title pt-3 pl-1">{{ $el['series'] }}</p>
+                        </a>
                     </div>
                 @endforeach
             </div>

@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('main')
-    @include('partials.main-comics')
+    @include('partials.main-comic')
 @endsection

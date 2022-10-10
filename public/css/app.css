@@ -9306,6 +9306,32 @@ section.for-main main .but:hover,
 section.for-main main .but2:hover {
   background-color: #0055a4;
 }
+section.for-main main .bg-blue-DC {
+  background-color: #0282f9;
+  height: 70px;
+}
+section.for-main main .bg-blue-DC a {
+  top: -270px;
+}
+section.for-main main .bg-blue-DC .bg-azure-DC {
+  background-color: #00a9d9;
+}
+section.for-main main .border-DC-price {
+  border: 1px solid #1d1d1d;
+}
+section.for-main main .bg-gray-DC {
+  background-color: #f6f6f6;
+}
+section.for-main main .price {
+  background-color: #55ba59;
+}
+section.for-main main .price > div {
+  border: 1px solid #1d1d1d;
+}
+section.for-main main .price select {
+  background-color: transparent;
+  border: none;
+}
 section.for-main main .but {
   font-size: 1.5rem;
   font-weight: bold;

@@ -19,7 +19,7 @@
         @endforeach
 
         <div class="ms-auto">
-            <img class="logo-footer" src="img/dc-logo-bg.png" alt="dc logo bg">
+            <img class="logo-footer" src="{{asset('./img/dc-logo-bg.png')}}" alt="dc logo bg">
         </div>
     </div>
 
@@ -33,7 +33,7 @@
                 <a href="#">FOLLOW US</a>
                 @foreach (config('DC.footerBottom') as $el)
                     <a href="#">
-                        <img src="{{ $el['src'] }}" alt="{{ $el['alt'] }}" title="{{ $el['alt'] }}">
+                        <img src="{{ asset($el['src']) }}" alt="{{ $el['alt'] }}" title="{{ $el['alt'] }}">
                     </a>
                 @endforeach
             </div>

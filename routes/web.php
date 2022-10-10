@@ -18,8 +18,14 @@ Route::get('/comics', function () {
         'dc' => config('DC')
     ];
     return view('comics', $data);
-});
+})->name('comics');
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/comic/{id}', function ($id) {
+    if($id < count(config('comics'))){
+        return view('comic', ['comic' => config('comics')[$id]]);
+    }
+})->where('id', '[0-9]+')->name('comic');
