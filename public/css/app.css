@@ -9473,10 +9473,59 @@ footer .top a {
 }
 footer .top a:hover {
   color: #fff;
-  filter: invert(1);
 }
 @media screen and (max-width: 767.98px) {
   footer .top a {
+    width: 100%;
+  }
+}
+
+footer .top2 {
+  position: relative;
+  z-index: 1000;
+  background-color: white;
+}
+footer .top2 a {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: filter 0.1s ease-in-out;
+}
+footer .top2 a:hover .footer-card-1 {
+  background-position: 0 100%;
+}
+footer .top2 a:hover .footer-card-2 {
+  background-position: 100% 100%;
+}
+footer .top2 a:hover .footer-card-3 {
+  background-position: 66.8% 100%;
+}
+footer .top2 a:hover .footer-card-4 {
+  background-position: 33% 100%;
+}
+footer .top2 a .footer-card-1,
+footer .top2 a .footer-card-2,
+footer .top2 a .footer-card-3,
+footer .top2 a .footer-card-4 {
+  background-image: url("../img/cta-icons.png");
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+}
+footer .top2 a .footer-card-1 {
+  background-position: 0 0;
+}
+footer .top2 a .footer-card-2 {
+  background-position: 100% 0;
+}
+footer .top2 a .footer-card-3 {
+  background-position: 66.8% 0;
+}
+footer .top2 a .footer-card-4 {
+  background-position: 33% 0;
+}
+@media screen and (max-width: 767.98px) {
+  footer .top2 a {
     width: 100%;
   }
 }

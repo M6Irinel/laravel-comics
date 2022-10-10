@@ -1,4 +1,4 @@
-<section class="for-main">
+<section class="for-main relative z-full">
     <div class="bg">
         <main class="text-white fw-bold py-4 container">
             <button class="but px-3 py-1">CURRENT SERIES</button>

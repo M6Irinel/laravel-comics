@@ -1,4 +1,4 @@
-<section class="for-main">
+<section class="for-main relative z-full">
     <div class="bg-white">
         <main class="fw-bold">
             <div class="bg-blue-DC">
@@ -41,14 +41,14 @@
                     <table class="f-col-6">
                         <thead>
                             <tr class="border-b border-b-gray-2">
-                                <th class="azure-9">Talent</th>
+                                <th class="azure-9 pb-3">Talent</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-b-gray-2">
-                                <td class="azure-8 w-30">Art by:</td>
-                                <td class="text-primary">
+                                <td class="azure-8 w-30 fs-2">Art by:</td>
+                                <td class="text-primary fs-2">
                                     @foreach ($comic['artists'] as $artist)
                                         {{ $artist . ', ' }}
                                         @if ($loop->last)
@@ -59,8 +59,8 @@
                             </tr>
 
                             <tr class="border-b border-b-gray-2">
-                                <td class="azure-8">Written by:</td>
-                                <td class="text-primary">
+                                <td class="azure-8 fs-2">Written by:</td>
+                                <td class="text-primary fs-2">
                                     @foreach ($comic['writers'] as $artist)
                                         {{ $artist . ', ' }}
                                         @if ($loop->last)
@@ -75,24 +75,24 @@
                     <table class="f-col-6">
                         <thead>
                             <tr class="border-b border-b-gray-2">
-                                <th class="azure-9">Specs</th>
+                                <th class="azure-9 pb-3">Specs</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b border-b-gray-2">
-                                <td class="azure-8">Series:</td>
-                                <td class="gray-7">{{ strtoupper($comic['series']) }}</td>
+                                <td class="py-2 azure-8 fs-2">Series:</td>
+                                <td class="gray-7 text-primary fs-2">{{ strtoupper($comic['series']) }}</td>
                             </tr>
 
                             <tr class="border-b border-b-gray-2">
-                                <td class="azure-8">U.S. Price:</td>
-                                <td class="gray-7">{{ $comic['price'] }}</td>
+                                <td class="py-2 azure-8 fs-2">U.S. Price:</td>
+                                <td class="gray-7 fs-2">{{ $comic['price'] }}</td>
                             </tr>
 
                             <tr class="border-b border-b-gray-2">
-                                <td class="azure-8">On Sale Date:</td>
-                                <td class="gray-7">{{ $comic['sale_date'] }}</td>
+                                <td class="py-2 azure-8 fs-2">On Sale Date:</td>
+                                <td class="gray-7 fs-2">{{ $comic['sale_date'] }}</td>
                             </tr>
                         </tbody>
                     </table>

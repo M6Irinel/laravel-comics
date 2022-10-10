@@ -1,5 +1,5 @@
 <footer>
-    @include('partials.topFooter')
+    @yield('top-footer')
     <div class="centerFooter container">
         @foreach (config('DC.footer-list') as $el)
             <div class="list">
