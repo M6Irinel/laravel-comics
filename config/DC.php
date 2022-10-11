@@ -206,11 +206,11 @@ return [
 
     'header-button' => [
         [
-            "href" => "#",
+            "href" => "/",
             "content" => "CHARACTERS"
         ],
         [
-            "href" => "#",
+            "href" => "/comics",
             "content" => "COMICS"
         ],
         [

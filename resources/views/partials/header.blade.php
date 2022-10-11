@@ -13,7 +13,8 @@
                 <ul class="navbar-nav ml-auto">
                     @foreach (config('DC.header-button') as $k => $el)
                         <li class="nav-item
-                        @if($k == 1)
+
+                        @if(strtolower(Request::Route()->getName()) == strtolower($el['content']))
                             active
                         @endif
                         ">
